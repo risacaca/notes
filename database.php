@@ -3,7 +3,7 @@
 define ('DB_HOST', 'localhost');
 define ('DB_USER', 'root');
 define ('DB_PASS', '');
-define ('DB_NAME', 'pplg_1_notes');
+define ('DB_NAME', 'peminjaman_barang');
 $dbconnect=mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME) or die("Failed to connect to MYSQL: " . mysqli_error($dbconnect));
 
 // $host="localhost";
@@ -24,10 +24,11 @@ function kuery($kueri)
     return $rows;
 }
 
-function inputdata($inputdata)
+
+function inputbarang($tabelname,$data1,$data2,$data3,$data4,$data5,$data6)
 {
     global $dbconnect;
-    $sql=mysqli_query($dbconnect, $inputdata);
+    $sql=mysqli_query($dbconnect, "insert into $tabelname values (null,$data1,$data2,$data3,$data4,$data5,$data6)");
     return $sql;
 }
 

@@ -37,16 +37,56 @@
 
 <br><br>
 <div class="container">
-  <h1>NEW NOTES</h1>
-  <form action="proses_input.php" method="post">
-    <div class="form-group">
-      <label for="notes"></label>
-      <textarea class="form-control" id="textarea" rows="3" name="notes"></textarea>
+  <h1>tambah data barang</h1>
+  <form action="simpan_barang.php" method="post">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Kode Barang</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="kode" name="kode_barang">
     </div>
-    <br>
-<div>
-  <input type="submit" value="Save">
-</div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">nama Barang</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="namabarang" name="nama_barang">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">tanggal</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="tanggal" name="tanggal">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">merek</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="merek" name="merek">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">harga</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="harga" name="harga">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">jumlah</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="jumlah" name="jumlah">
+    </div>
+  </div>
+  
+  </div>
+  <div class="form-group">
+    <label for="keterangan">keterangan</label>
+    <textarea class="form-control" id="keterangan" name="keterangan" rows="3"></textarea>
+  </div>
+  
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary"name="simpan">simpan</button>
+    </div>
+  </div>
 </form>
 </div>
     <!-- Optional JavaScript; choose one of the two! -->

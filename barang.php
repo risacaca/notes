@@ -1,6 +1,6 @@
 <?php
 require_once("database.php");
-$tampil = kuery("Select * from notes");
+$tampil = kuery("Select * from barang");
 // var_dump($tampil);
 ?>
 
@@ -14,7 +14,7 @@ $tampil = kuery("Select * from notes");
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Notes</title>
+    <title>barang</title>
   </head>
   <body>
 
@@ -30,7 +30,7 @@ $tampil = kuery("Select * from notes");
           <a class="nav-link active" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Notes</a>
+          <a class="nav-link" href="#">barang</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="#">API</a>
@@ -43,7 +43,7 @@ $tampil = kuery("Select * from notes");
 
 <div class="container">
     <br>
-    <h1>My Notes</h1>
+    <h1>My </h1>
     <br>
     <table class="table">
   <thead>
@@ -60,8 +60,8 @@ $tampil = kuery("Select * from notes");
     <tr>
       <th scope="row">1</th>
       <td><?php echo"$data[id]";?></td>
-      <td><?php echo"$data[note]";?></td>
-      <td><?php echo"$data[created_at]";?></td>
+      <td><?php echo"$data[kode_barang]";?></td>
+      <td><?php echo"$data[namabarang]";?></td>
       <td><?php echo"<a href='edit.php?id=$data[id]'>Edit</a> |
           <a href='javascript:hapusData(".$data['id'].")'>Hapus</a>"; ?> </td>
     </tr>
